@@ -1,2 +1,2 @@
 # jquery-gallery
-Jquery image gallery with thumnails
+Jquery image gallery with thumbnails
