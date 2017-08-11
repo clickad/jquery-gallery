@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+   
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
+    <script src = "js/script.js"></script>
+
+  </head>
+  <body>
+    <div class = "container">
+      <div class = "slider__wrapper">
+
+        <div class = "slider__view">
+          <div class = "view__img">
+            <!-- Rendering firt image from thumbs with jQuery-->
+          </div>
+        </div>
+
+        <div class = "slider__thumbs">
+          <button class = "scroll__btn left__btn">
+            <img src = "img/left-button.png" alt = "left" width = "25px" height = "45px">
+          </button>
+          <button class = "scroll__btn right__btn">
+            <img src = "img/right-button.png" alt = "left" width = "25px" height = "45px">
+          </button>
+
+          <div class = "thumbs__img" id = "thumbnail-holder">
+            <!-- Rendering thumbs with jQuery-->
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
