@@ -3,9 +3,8 @@ function getData() {
   return $.getJSON('data.json');
 }
 
-  $.when(getData()).then(function (data) {
-
-    $(window).on("load", function() {
+$(window).on("load", function() {
+   $.when(getData()).then(function (data) {
 
       var thumbs = data;
       var viewImg = $('.view__img');
