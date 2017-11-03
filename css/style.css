@@ -41,6 +41,7 @@ button:focus{
   padding: 0px;
   display: inline-block;
   position: relative;
+  width: 25%;
 }
 
 .thumbs__img{
