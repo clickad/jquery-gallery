@@ -74,7 +74,6 @@ button:focus{
 .thumb__img{
   border:0;
   width:100%;
-  /*height: 180px;*/
   position: relative;
   -webkit-transition: all 200ms ease-in;
   -webkit-transform: scale(0.9); 
@@ -107,6 +106,7 @@ button:focus{
   display:none;
   opacity: 0.6;
   width: 3%;
+  cursor: pointer;
 }
 
 .scroll__btn img{
