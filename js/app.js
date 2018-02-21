@@ -21,17 +21,16 @@
         this.$thumbnail = $('.thumb__link');
         this.$thumbImg = $('.thumb__img');
         this.$spinner = $('.spinner');
-
         this.changeBackImage(data);
         this.$thumbImg.on('load', this.showContent.bind(this));
-        this.scrollBtn();
         this.$rightBtn.on('click',this.rightScroll.bind(this));
         this.$leftBtn.on('click',this.leftScroll.bind(this));
-        this.$window.on('resize mouseenter', this.scrollBtn.bind(this));
+        setTimeout(this.scrollBtn.bind(this),300);
+        this.$window.on('mouseenter resize', this.scrollBtn.bind(this));
       },
       scrollBtn: function(){
         var self = this;
-        var btnHeight = this.$sliderThumbs.height();
+        var btnHeight = this.$sliderThumbs.height(); 
         this.$scrollBtn.css('height', btnHeight);
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
