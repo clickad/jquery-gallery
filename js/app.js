@@ -24,7 +24,7 @@
 
         this.changeBackImage(data);
         this.$thumbImg.on('load', this.showContent.bind(this));
-        this.scrollBtn.bind(this);
+        this.scrollBtn();
         this.$rightBtn.on('click',this.rightScroll.bind(this));
         this.$leftBtn.on('click',this.leftScroll.bind(this));
         this.$window.on('resize mouseenter', this.scrollBtn.bind(this));
