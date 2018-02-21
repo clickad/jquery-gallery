@@ -33,9 +33,14 @@
         var self = this;
         var btnHeight = this.$sliderThumbs.height();
         this.$scrollBtn.css('height', btnHeight);
+
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+          this.$scrollBtn.fadeIn(300);
+	} else{
         this.$sliderThumbs.on('mouseenter mouseleave', function(evt){
           evt.type === 'mouseenter' ? self.$scrollBtn.fadeIn(300) : self.$scrollBtn.fadeOut(300);
         });
+        }
       },
       rightScroll: function(event){
         var self = this;
