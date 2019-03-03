@@ -1,0 +1,25 @@
+{
+  "name": "jquery-gallery",
+  "version": "1.0.0",
+  "description": "Simple jQuery Gallery",
+  "main": "src/app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4"
+  },
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clickad/jquery-gallery.git"
+  },
+  "author": "Adnan Damadzic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clickad/jquery-gallery/issues"
+  },
+  "homepage": "https://github.com/clickad/jquery-gallery#readme"
+}
